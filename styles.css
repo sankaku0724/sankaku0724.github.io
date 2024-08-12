@@ -1,0 +1,233 @@
+/* styles.css */
+
+/* スマホ用スタイル */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* メニューを縦に並べる */
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  .slide {
+    height: 300px; /* スライドショーの高さを調整 */
+  }
+}
+
+/* タブレット用スタイル */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+  }
+  .slide {
+    height: 400px; /* スライドショーの高さを調整 */
+  }
+}
+
+/* PC用スタイル */
+@media only screen and (min-width: 1025px) {
+  nav ul {
+    flex-direction: row;
+  }
+  .slide {
+    height: 500px; /* PCでのスライドショーの高さをそのまま */
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #f0f8ff;
+}
+
+header {
+  /* background: #2e8b57; */
+  background: blue;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+#home {
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.service {
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+form {
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background: blue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: blue;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slide-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: slider-1 24s linear infinite;
+}
+
+.slide-image:nth-child(1) {
+  background-image: url(./images/pc1.JPG);
+  animation-delay: -2s;
+}
+
+.slide-image:nth-child(2) {
+  background-image: url(./images/pc2.PNG);
+  animation-delay: 4s;
+}
+
+.slide-image:nth-child(3) {
+  background-image: url(./images/pc3.JPG);
+  animation-delay: 10s;
+}
+
+.slide-image:nth-child(4) {
+  background-image: url(./images/pc4.JPG);
+  animation-delay: 16s;
+}
+
+@keyframes slider-1 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4.16% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
