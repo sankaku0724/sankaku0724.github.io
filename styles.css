@@ -46,7 +46,6 @@ body {
 }
 
 header {
-  /* background: #2e8b57; */
   background: blue;
   color: #fff;
   padding: 1rem 0;
@@ -231,3 +230,7 @@ body {
   }
 }
 
+.experience-link {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
