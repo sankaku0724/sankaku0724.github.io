@@ -169,17 +169,23 @@ body {
   margin: 0;
 }
 
-.pc-pic,.mobile-pic{
-	width:100%;
+.pc-pic, .mobile-pic {
+  width: 100%;
 }
 
-/*PCの時はmobile-picを隠してpc-picを表示する*/
-.mobile-pic{
-	display:none;
+/* PCの時はmobile-picを隠してpc-picを表示する */
+@media (min-width: 768px) {
+  .mobile-slideshow {
+      display: none;
+  }
 }
-.pc-pic{
-	display:flex;
+
+@media (max-width: 767px) {
+  .pc-slideshow {
+      display: none;
+  }
 }
+
 
 /* .slide {
   position: relative;
