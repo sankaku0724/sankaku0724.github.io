@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/load.js"></script>
 </head>
 
 <body>
@@ -24,12 +29,20 @@
     <main>
         <section class="flex flex-col space-y-6" id="home">
             <h1 class="text-3xl font-semibold">さんかくのホームページへようこそ！</h1>
-            <div class="slide">
-                <div class="slide-image"></div>
-                <div class="slide-image"></div>
-                <div class="slide-image"></div>
-                <div class="slide-image"></div>
-            </div>
+            <div class="mobile-slideshow">
+                <img src="images/mobile1.JPG" class="mobile-pic">
+                <img src="images/mobile2.JPG" class="mobile-pic">
+                <img src="images/mobile3.JPG" class="mobile-pic">
+                <img src="images/mobile4.PNG" class="mobile-pic">
+              </div>
+          
+              <div class="pc-slideshow">
+                <img src="images/pc1.JPG" class="pc-pic">
+                <img src="images/pc2.JPG" class="pc-pic">
+                <img src="images/pc3.JPG" class="pc-pic">
+                <img src="images/pc4.JPG" class="pc-pic">
+                <img src="images/pc5.JPG" class="pc-pic">
+              </div>
         </section>
 
         <section id="profile">
@@ -38,7 +51,7 @@
             <div class="service">
                 <h3 class="font-semibold text-xl">所属</h3>
                 <ul>
-                    <li>・広島市立大学 情報科学部 情報工学科 コミュニケーション講座（2021/04～）<a href="https://www.hiroshima-cu.ac.jp/department/sciences/info/communication/" target="_blank" class="experience-link">大学公式サイト</a></li>
+                    <li>・<a href="https://www.hiroshima-cu.ac.jp/department/sciences/info/communication/" target="_blank" class="experience-link">広島市立大学 情報科学部 情報工学科 コミュニケーション講座</a><a>（2021/04～）</a></li>
                     <li>・先端ネットワーク・セキュリティ研究グループ（2024/04～）</li>
                 </ul>
             </div>

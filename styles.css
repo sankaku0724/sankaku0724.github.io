@@ -169,7 +169,19 @@ body {
   margin: 0;
 }
 
-.slide {
+.pc-pic,.mobile-pic{
+	width:100%;
+}
+
+/*PCの時はmobile-picを隠してpc-picを表示する*/
+.mobile-pic{
+	display:none;
+}
+.pc-pic{
+	display:flex;
+}
+
+/* .slide {
   position: relative;
   width: 100%;
   height: 500px;
@@ -228,7 +240,7 @@ body {
   100% {
     opacity: 0;
   }
-}
+} */
 
 .experience-link {
   color: blue;
