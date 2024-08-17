@@ -1,40 +1,33 @@
 /* styles.css */
 
-/* スマホ用スタイル */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    flex-direction: column; /* メニューを縦に並べる */
-    align-items: flex-start;
-  }
-  nav ul li {
-    margin-left: 0;
-    margin-bottom: 1rem;
-  }
+/* スライドショー全体の固定サイズ */
+.slide {
+  width: 100%; /* スライドショーの幅を画面いっぱいに */
+  height: 500px; /* PC用固定高さ */
+  overflow: hidden;
+  border-radius: 8px; /* 必要に応じて角丸を設定 */
+}
+
+/* モバイル用スタイル */
+@media (max-width: 600px) {
   .slide {
-    height: 300px; /* スライドショーの高さを調整 */
+    height: 300px; /* モバイルでの固定高さ */
   }
 }
 
 /* タブレット用スタイル */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  nav ul {
-    flex-direction: row;
-  }
+@media (min-width: 601px) and (max-width: 1024px) {
   .slide {
-    height: 400px; /* スライドショーの高さを調整 */
+    height: 400px; /* タブレットでの固定高さ */
   }
 }
 
 /* PC用スタイル */
-@media only screen and (min-width: 1025px) {
-  nav ul {
-    flex-direction: row;
-  }
+@media (min-width: 1025px) {
   .slide {
-    height: 500px; /* PCでのスライドショーの高さをそのまま */
+    height: 500px; /* PCでの固定高さ */
   }
 }
-
 
 body {
   font-family: Arial, sans-serif;
