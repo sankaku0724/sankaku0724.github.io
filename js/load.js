@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
-  if (performance.navigation.type !== 1) {
+  const [navigation] = performance.getEntriesByType("navigation");
+  if (navigation.type !== 'reload') {
     setTimeout(function() {
       location.reload();
     }, 1);
